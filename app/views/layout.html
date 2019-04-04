@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="/assets/css/amazeui.min.css"></link>
+    <link rel="stylesheet" href="/assets/css/app.css"></link>
+</head>
+<body>
+    <header class="am-topbar am-text-center">
+        <h1 class="am-sm-12">超简单留言板</h1>
+        <div class="am-g">
+                <a class="am-btn-default" href="/">所有留言</a>
+                <a class="am-btn-default" href="/index/add">添加留言</a>
+            </div>
+    </header>
+    <div class="am-g content">
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 2019 超简单留言板</p>
+    </footer>
+</body>
+</html>
